@@ -66,16 +66,17 @@ function getLast( array ) {
       return array[array.length-1];
     }
 };
-console.log(getLast([44,5,7]));
-console.log(getLast([]));
+console.log(getLast([44,5,7])); //example with array with values.
+console.log(getLast([])); //example with empty array. 
 
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
+
 function find(value, array) {
-  let found = false;
-      for(let i = 0; !found && i < array.length; i++) {
+  let found;
+      for(let i = 0; i < array.length; i++) {
         if(value == array[i]) {
           found = true;
         } 
@@ -87,9 +88,8 @@ function find(value, array) {
       }
  
   };
+  console.log(find(88,[55,4,88,2]));
 
-
-console.log(find(88,[55,4,88,2]));
 
 // ----------------------
 // Stretch Goals
