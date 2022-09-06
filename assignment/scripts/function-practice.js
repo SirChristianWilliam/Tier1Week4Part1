@@ -8,6 +8,7 @@ console.log('***** Function Practice *****')
 function hello() {
   return 'Hello World!';
 }
+yo
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
 
