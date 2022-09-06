@@ -128,7 +128,7 @@ function exampleTwo ( arr ) {
   }
   return sum;
 }
-console.log(exampleTwo(numbers)); //EXMAPLES 2 WITH "OF" LOOP.
+console.log(exampleTwo(numbers)); //EXMAPLE 2 WITH "OF" LOOP.
 console.log("----end of example2 for #9----");
 
 // 10. Function to return a new array of all positive (greater than zero)
@@ -153,11 +153,20 @@ commaAway = result.slice(0,result.length-1);
  
 
 return commaAway + " : Total length(numbers) is now " + takeAway;
-}; //THOUGHT THE "takeAway" VARIABLE WOULD BE A COOL TOOL TO ADD HERE. 
+};
+console.log(myFunction(arrayNumbers));
+ //THOUGHT THE "takeAway" VARIABLE WOULD BE A COOL TOOL TO ADD HERE. 
 // I ALSO NEEDED TO DELETE THE LAST COMMA, HENCE THE "commaAway" VARIABLE. 
 
-console.log(myFunction(arrayNumbers));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+console.log("I picked the first problem I found under javascript functions, \
+here is the link https://www.codewars.com/kata/563a631f7cbbc236cf0000c2/train/javascript");
+console.log("You can see what the problem was. My solution was to create two arguments,\
+one for the current position, and one for the roll. With the roll, you actually \
+move from left to right TWO times. So naturally, I created a variable that takes \
+the value of the starting position(variable position) and added it to the value of the dice \
+roll(and multiplying the dice roll value by 2). I then returned the variable I had created \
+which was labeled newPos, and the value returned the new position of the player");
