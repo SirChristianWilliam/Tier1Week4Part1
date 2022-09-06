@@ -136,17 +136,25 @@ console.log("----end of example2 for #9----");
 //     return an empty array. Note: The input array should not change.
 
 let arrayNumbers = [4,2,3,6,2,1];
+let takeAway = arrayNumbers.length;
+let commaAway;
 function myFunction(arr) {
 let result = "";
 for(let i = 0; i < arr.length; i++) {
   if(arr[i] > 0) {
-  result += arr[i];
+  result += arr[i] + ","; 
+ 
 } else {
   result += [];
+  takeAway -=1;
 }
+commaAway = result.slice(0,result.length-1);
 }
-return result;
-};
+ 
+
+return commaAway + " : Total length(numbers) is now " + takeAway;
+}; //THOUGHT THE "takeAway" VARIABLE WOULD BE A COOL TOOL TO ADD HERE. 
+// I ALSO NEEDED TO DELETE THE LAST COMMA, HENCE THE "commaAway" VARIABLE. 
 
 console.log(myFunction(arrayNumbers));
 
