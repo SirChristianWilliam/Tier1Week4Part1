@@ -1,4 +1,4 @@
-console.log('***** Function Practice *****')
+console.log('***** Function Practice *****');
 
 // Add the required code to complete the functions below
 // After _each_ function, use a console log to call the function
@@ -7,7 +7,7 @@ console.log('***** Function Practice *****')
 // 1. Function to return 'Hello World!'
 function hello() {
   return 'Hello World!';
-}
+};
 
 // Call the function to test
 console.log('Test - should say "Hello World!"', hello());
@@ -17,7 +17,7 @@ console.log('Test - should say "Hello World!"', hello());
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
 function helloName( name ) {
   return name;
-}
+};
 // Remember to call the function to test
 console.log("Hello,",helloName("Carl"));
 
@@ -26,8 +26,8 @@ function addNumbers( firstNumber,secondNumber ) {
   // return firstNumber + secondNumber;
    return firstNumber + secondNumber;
 
-}
-console.log(addNumbers(4,6))
+};
+console.log(addNumbers(4,6));
 
 
 // 4. Function to multiply three numbers & return the result
@@ -41,10 +41,15 @@ console.log(multiplyThree(1,2,3));
 //    or greater than zero, and false otherwise
 function isPositive( number ) {
   if ( number > 0 ){
-    return;
+    return true;
+  } else {
+    return false;
   }
-    return;
-}
+};
+console.log("Number is positive and greater than zero:",isPositive(7));
+console.log("Number is positive and greater than zero:",isPositive(0));
+console.log("Number is positive and greater than zero:",isPositive(-7));
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
