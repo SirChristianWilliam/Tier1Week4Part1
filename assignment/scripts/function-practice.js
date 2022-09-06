@@ -98,9 +98,9 @@ function find(value, array) {
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
 if(letter == string[0]) {
-  return true;
+ return true;
 } else {
-  return false;
+ return false;
 }
 };
 
@@ -114,7 +114,7 @@ function sumAll( arr ) {
   let sum = 0
   // TODO: loop to add items
   for(let i = 0; i < arr.length; i++) {
-    sum+=arr[i];
+   sum+=arr[i];
   }
   return sum;
 };
@@ -124,7 +124,7 @@ console.log("----end of example1 for #9----");
 function exampleTwo ( arr ) {
   let sum = 0;
   for(x of arr) {
-    sum+= x;
+  sum+= x;
   }
   return sum;
 }
@@ -135,7 +135,20 @@ console.log("----end of example2 for #9----");
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
+let arrayNumbers = [4,2,3,6,2,1];
+function myFunction(arr) {
+let result = "";
+for(let i = 0; i < arr.length; i++) {
+  if(arr[i] > 0) {
+  result += arr[i];
+} else {
+  result += [];
+}
+}
+return result;
+};
 
+console.log(myFunction(arrayNumbers));
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
